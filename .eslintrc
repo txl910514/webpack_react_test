@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    //禁止使用控制台
+    "no-console": 0,
+    //缩进  SwitchCase为switch缩进
+    "indent": [2, 2, {"SwitchCase": 1}],
+    //需要使用箭头函数
+    "arrow-body-style": 0,
+    //要求文件以单一的换行符结束
+    "eol-last": 0,
+    //ignoreComments忽略所有的注释和评论自己的线，ignoreUrls忽略url
+    "max-len": [2, 150, 2, {"ignoreComments": true, "ignoreUrls": true}],
+    //驼峰命名
+    "camelcase": 0,
+    //禁止使用外部包
+    "import/no-extraneous-dependencies": 0,
+  },
+  "plugins": [],
+}

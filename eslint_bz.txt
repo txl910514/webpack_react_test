@@ -1,0 +1,14 @@
+链接:https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+
+安装eslint-config-airbnb操作步骤
+1.在home新建文件夹
+2.npm init
+3.eslint --init
+4.选择第二个
+5.执行
+(
+  export PKG=eslint-config-airbnb;
+  npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
+)
+6.install的时候版本号要与上面执行的一致；
+npm install --save-dev eslint-config-airbnb eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
